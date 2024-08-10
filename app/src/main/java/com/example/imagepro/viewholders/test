@@ -1,0 +1,62 @@
+addStudent.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+
+//                    LayoutInflater inflater = LayoutInflater.from(ClassDetail_Activity.this);
+//                    final View view1 = inflater.inflate(R.layout.popup_add_student, null);
+//                    student_name = view1.findViewById(R.id.name_student_popup);
+//                    reg_no = view1.findViewById(R.id.regNo_student_popup);
+//                    mobile_no = view1.findViewById(R.id.mobileNo_student_popup);
+//
+//                    lovelyCustomDialog = new LovelyCustomDialog(ClassDetail_Activity.this)
+//                            .setView(view1)
+//                            .setTopColorRes(R.color.theme_light)
+//                            .setTitle("Add Student")
+//                            .setIcon(R.drawable.ic_baseline_person_add_24)
+//                            .setCancelable(false)
+//                            .setListener(R.id.add_btn_popup, new View.OnClickListener() {
+//                                @Override
+//                                public void onClick(View view) {
+//
+//                                    String name = student_name.getText().toString();
+//                                    String regNo = reg_no.getText().toString();
+//                                    String mobNo = mobile_no.getText().toString();
+//
+//                                    if (isValid()){
+//                                    addStudentMethod(name, regNo, mobNo);
+//                                    }else{
+//                                        Toast.makeText(ClassDetail_Activity.this, "Please fill all the details..", Toast.LENGTH_SHORT).show();
+//                                    }
+//
+//
+//                                }
+//                            })
+//                            .setListener(R.id.cancel_btn_popup, new View.OnClickListener() {
+//                                @Override
+//                                public void onClick(View view) {
+//                                    lovelyCustomDialog.dismiss();
+//                                }
+//                            })
+//                            .show();
+
+        startActivity(new Intent(ClassDetail_Activity.this, CameraActivity.class).addFlags(Intent.FLAG_ACTIVITY_CLEAR_TASK | Intent.FLAG_ACTIVITY_CLEAR_TOP));
+
+//                String[] names = {
+//                        "Courteney_Cox", "arnold_schwarzenegger", "bhuvan_bam", "hardik_pandya", "David_Schwimmer",
+//                        "Matt_LeBlanc", "Simon_Helberg", "scarlett_johansson", "Pankaj_Tripathi", "Matthew_Perry",
+//                        "sylvester_stallone", "messi", "Jim_Parsons", "random_person", "Lisa_Kudrow", "mohamed_ali",
+//                        "brad_pitt", "ronaldo", "virat_kohli", "angelina_jolie", "Kunal_Nayya", "manoj_bajpayee",
+//                        "Sachin_Tendulka", "Jennifer_Aniston", "dhoni", "pewdiepie", "aishwarya_rai", "Johnny_Galeck",
+//                        "ROHIT_SHARMA", "suresh_raina"
+//                };
+
+//                for (String name : names) {
+//                    String regNo = generateRegistrationNumber();
+//                    String mobNo = generateMobileNumber();
+//                    // Assuming you have a method to add data to the database
+//                    // addDataToDatabase(name, regNo, mobNo);
+//                    addStudentMethod(name, regNo, mobNo);
+////                    System.out.println("Name: " + name + ", Reg No: " + regNo + ", Mob No: " + mobNo);
+//                }
+            }
+        });
